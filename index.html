@@ -9,38 +9,58 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     
-    <div class="container">
-      <div class="card">
-        <h1>
-          Hi, I'm Boris ʕ•́ᴥ•̀ʔっ
-        </h1>
-        <img src="images/boris.png" alt="boris profil picture" width="200px">
-        <p>Hi, I'm Boris and I'm learing coding now :)</p>
-        <a href="https://github.com/borismwanga" target="_blank" class="btn-white">Github</a>
+     <header>
+      <span>My Profile</span>
+      <span id="date">LInk</span>
+     </header>
+     <main>
+      <div class="profil-image">
+        <img  class="img-grey" src="/images/C6248A5B-3244-4D4D-A3D0-4B24A07F13FB_1_105_c.jpeg" alt="boris profile photo">
       </div>
-      <div class="card">
-        <h3>
-          Follow me
-        </h3>
-        <ul class="list-inline">
-          <li>
-            <a href="https://github.com/borismwanga">
-              <i class="fab fa-github-square fa-5x"></i> 
-            </a>
-          </li>
-          <li>
-            <a href="https://instagram.com/brysbrozers">
-              <i class="fab fa-instagram-square fa-5x"></i> 
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/borismwanga">
-              <i class="fab fa-twitter-square fa-5x"></i> 
-            </a>
-          </li>
-        </ul>
+      <div class="content">
+        <h1>Boris Mwanga</h1>
+        <span class="line"></span>
+        <p >Hey, my name is Boris Mwanga but and I use BrysBrozers as my nickname across social medias. </p>
+        <p >I am currently learning web development at <a href="https://www.lewagon.com/" class="link">Le Wagon</a>.</p>
+        <p >I’m also passionate about music, football and universes around what I listen to and I’m always curious to learn more when it comes to new technologies and creative coding.
+
+        </p>
       </div>
-    </div>
+     </main>
+    <footer>
+      <p>Copyright © 2022</p> 
+      <ul class="list-inline">
+        <li>
+          <a href="https://github.com/borismwanga">
+            <i class="fab fa-github-square fa-2x"></i> 
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/brysbrozers">
+            <i class="fab fa-instagram-square fa-2x"></i> 
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/borismwanga">
+            <i class="fab fa-twitter-square fa-2x"></i> 
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script>
+      /*date*/
+    var dateObj = new Date();
+    var month = dateObj.getUTCMonth() + 1; 
+    var day = dateObj.getUTCDate();
+    var year = dateObj.getUTCFullYear();
+
+    newdate = day + "-" + month + "-" + year;
+    document.getElementById("date").innerHTML = newdate;
+    /*grey filter on image*/
+    removeFilter = () =>{
+    let element = document.getElementsByClassName("img-grey");
+    element.classList.remove(".img-grey")
+    }
+    </script>
 </body>
 </html>
