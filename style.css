@@ -5,9 +5,13 @@
     padding: 0;
 } */
 body{
- 
+  background: radial-gradient( rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%);
+  color: white;
+    font-family: 'Press Start 2P', sans-serif;
+    font-weight: 300; 
+    text-align: center;
+    overflow: hidden;
 }
-
 a {
     text-decoration: none;
     color: green
