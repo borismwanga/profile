@@ -1,87 +1,143 @@
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P:wght@300;400;700&family=Poppins:wght@300;400;500;700");
-
-/* *{
-    margin: 0;
-    padding: 0;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
 body{
-    background-color: black;
-    color: white;
-    font-family: 'Press Start 2P', sans-serif;
-    font-weight: 300; 
-    text-align: center;
+  font-family: 'Bebas Neue', cursive;
 }
-a {
-    text-decoration: none;
-    color: green
-}
-a:hover{
-    color :#FF9F29
-}
-.list-inline {
-    list-style: none;
-    padding-left: 0px;
-  }
-.list-inline > li {
-    display: inline-block;
-    padding: 0px 20px;
-  }
-/* li{
-    float: left;
-    padding: 5px;
-} */
-
 h1{
-    color:#1A4D2E
+  font-size: 5vw;
 }
-h2{
-    color:#FF9F29
-}
-h3, p{
-    color:black
-}
-img{
-    background: white;
-    border: solid 1px green;
-    border-radius: 5px;
+span{
+  font-size: 2vw;
 }
 p{
-    margin: 25px;
+  font-family: 'Abel', sans-serif;
+  line-height: 1.8em;
+  font-size: 20px;
 }
-.btn-white{
-    width: 200px;
-    border: 1px solid green;
-    border-radius: 5px;
-    padding: 15px 20px;
-    border-radius: 4px;
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  line-height: 70px;
+  background-color: #fff;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: #fff;
+  z-index: 10;
+  line-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
 }
 
-.card{
-    border: solid 1A4D2E 1px;
-    background-color: white;
-    padding: 50px;
-    width: 500px;
-    margin: 25px auto;
-    border-radius: 5px;
+.profil-image{
+  float: left;
+  height: 100%;
+  border: 1px;
+}
+.img-grey{
+  filter: grayscale();
+ 
+}
+.profil-image > img{
+  height: 100%;
+  border: 1px solid #f6FBfF;
 
 }
-@media (max-width: 960px) {
-    /* For a screen < 960px, this CSS will be read */
-    .container {
-      width: 700px;
-    }
+
+
+main{
+  width: 95%;
+  height: 90vh;
+  position: absolute;
+  background: #f6FBfF;
+  /* background: red; */
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  z-index: -3;
+  display: flex;
+  /* border-radius: 15px 15px 15px 15px; */
+
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+.content{
+  margin-top: 15%;
+  margin-left: 15px;
+  background-color: #f6FBfF;
+}
+.line{
+  display: inline-block;
+  width: 70px;
+  height: 5px;
+  background-color: #333;
+  margin-bottom: 30px;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+a:hover{
+  color:red
+}
+.link{
+  color: coral;
+}
+
+@media (max-width: 960px) { 
+  .profil-image{
+    display: none;
   }
+  h1{
+    font-size: 20vw;
+  }
+  span{
+    font-size: 40px;
+  }
+  main{
+    width: 100%;
+    
+    z-index: -3;
+    display: flex;
+    /* border-radius: 15px 15px 15px 15px; */
   
-  @media (max-width: 720px) {
-    /* For a screen < 720px, this CSS will be read */
-    .container {
-      width: 500px;
-    }
   }
+  .list-inline{
+    display: none;
+  }
+  footer{
+    text-align: center;
+    display: block;
+    }
+    #date{
+      display: none;
+    }
   
-  @media (max-width: 540px) {
-    /* For a screen < 540px, this CSS will be read */
-    .container {
-      width: 300px;
-    }
-  }
+}
+
